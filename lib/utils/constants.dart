@@ -128,4 +128,26 @@ class Constants {
   static const String MY_RIDE = "My Ride";
   static const String UPCOMING = "Upcoming";
   static const String PAST = "Past";
+  static const String CANCEL_RIDE = "CANCEL RIDE";
+  static const String TRACK_DRIVER = "TRACK RIDE";
+// default payment
+  static const String DEFAULT_PAYMENT = "Default Payment";
+  static const String CARD = "Credit/Debit Card";
+  static const String ADD_CARD = "Add New Card";
+  static const String SAVE_AND_PAY_CARD = "Save and Pay via Cards";
+  static const String SAVE_AND_PAY_WALLET = "Save and Pay via Wallets";
+  static const String ADD_WALLETS = "Add Wallets";
+// about
+  static const String ABOUT_DESC =
+      '''                      We are Kiwni....... KIWNI CLUB ,is powered by Komfrey Technologies pvt Ltd which is an Indian online start - up car rental founded as an online cab aggregator in pune catering some of the top class  Vendors which  relate well  to our target audience interested for outsation which helps you find a car by experiencing luxury with comfort at a reasonable fare .''';
+  static const String ABOUT_DESC1 =
+      '''                      We offer a world class rental application- based service to people through a user- friendly online booking application. we offer car with  well trained and cetified  drivers with well maintained cars with a choice to choose as per your convenient.''';
+// support
+  static const String HELP_TOPICS = "Help Topics";
+  static const String TRIP_ISSUES = "Trips Issues and Refunds";
+  static const String GUIDE = "A Guide to kiwni";
+  static const String ACCESSIBILITY = "Accessiblity";
+  static const String SERVICE = "All about kiwni service";
+  static const String BOOKING_ERROR = "New Booking Error";
+  static const String EMERGENCY_NUMBER = "Kiwni emergency Number";
 }

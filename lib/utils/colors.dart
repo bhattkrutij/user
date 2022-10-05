@@ -9,4 +9,5 @@ class ColorsHelper {
   static const redColor = Color(0xffe30a0a);
   static const darkBlueColor = Color(0xff4f7cb3);
   static const lightGreenColor = Color(0xff7dfbb8);
+  static const lightGreyColor = Color(0xffc4c6c4);
 }

@@ -51,7 +51,7 @@ class RoundedButton extends StatelessWidget {
                 style: BorderStyle.solid), //set border for the button
             borderRadius: BorderRadius.circular(borderRadius),
           ),
-          backgroundColor: backgroundColor,
+          onPrimary: backgroundColor,
         ),
         onPressed: onTap,
         child: Stack(

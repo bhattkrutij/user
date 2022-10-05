@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/all.dart';
 import 'package:get/get.dart';
+import 'package:kiwni_user/drawer/faqs/faqs.dart';
+import 'package:kiwni_user/drawer/payments/payments.dart';
+import 'package:kiwni_user/drawer/support/support.dart';
 import 'package:kiwni_user/screens/authentication/otp.dart';
 import 'package:kiwni_user/screens/authentication/permission.dart';
 import 'package:kiwni_user/screens/authentication/signin.dart';
@@ -16,7 +19,9 @@ import 'package:kiwni_user/screens/home/search.dart';
 import 'package:kiwni_user/screens/payments/payment_completed.dart';
 import 'package:kiwni_user/screens/payments/paymnet_options.dart';
 
-import 'drawer/my_rides.dart';
+import 'drawer/about/about.dart';
+import 'drawer/my_rides/my_rides.dart';
+import 'drawer/offers/offers.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -31,6 +36,8 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle(statusBarColor: Colors.transparent));
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
@@ -48,6 +55,11 @@ class MyApp extends StatelessWidget {
         '/paymentOptions': (context) => PaymentOptions(),
         '/paymentCompleted': (context) => PaymentCompleted(),
         '/myRides': (context) => MyRides(),
+        '/payments': (context) => Payments(),
+        '/offers': (context) => Offers(),
+        '/FAQs': (context) => FAQs(),
+        '/about': (context) => About(),
+        '/support': (context) => Support(),
       },
       title: 'Kiwni User App',
       theme: ThemeData(

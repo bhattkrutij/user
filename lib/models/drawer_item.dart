@@ -29,12 +29,17 @@ class _DrawerItemState extends State<DrawerItem> {
     _getDrawerItemWidget(int pos) {
       switch (pos) {
         case 0:
-          Get.toNamed("/myRides");
-          break;
-        // case 1:
-        //   return ScreenOne(
-        //
-        //   );
+          return Get.toNamed("/myRides");
+        case 1:
+          return Get.toNamed("/payments");
+        case 2:
+          return Get.toNamed("/offers");
+        case 4:
+          return Get.toNamed("/FAQs");
+        case 8:
+          return Get.toNamed("/support");
+        case 9:
+          return Get.toNamed("/about");
         // case 2:
         //   return TwoScreen();
         // case 3:
